@@ -19,7 +19,7 @@ def echo():
         data ={"parameter":"value"}
     return jsonify(data)
 
-# curl -F "file=@cat.jpeg" -X POST http://127.0.0.1:5000/upload_image
+# curl -F "file=@/Users/yunchaeyeong/Desktop/mlops/image/cat.jpeg" -X POST http://127.0.0.1:5000/upload_image
 @bp.route('/upload_image', methods=[ "POST"])
 def upload_image():
     if request.method == "POST":
