@@ -1,9 +1,11 @@
-coined_term = {"취존":"취향존중", 
-               "솔까말":"솔직히까놓고말해서",
-               "케바케":"케이스바이케이스"}
+coined_term = {"취존": "취향존중",
+               "솔까말": "솔직히까놓고말해서",
+               "케바케": "케이스바이케이스"}
+
 
 def print_hello():
     print("hello")
+
 
 def quiz():
     global coined_term
@@ -20,6 +22,6 @@ def quiz():
             print("오답")
     print(f"{num_quiz}개 문제 중 {num_correct}개 정답")
 
+
 if __name__ == "__main__":
     quiz()
-        
