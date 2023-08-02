@@ -1,5 +1,5 @@
-from core_codes.hello_world import hello_world
+from core_codes.hello_world import hi_world
 
 
 def test_hello_world():
-    assert hello_world() == "Hi, World!"
+    assert hi_world() == "Hi, World!"
