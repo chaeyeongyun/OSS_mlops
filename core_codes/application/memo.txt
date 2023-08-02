@@ -1,0 +1,12 @@
+├── pybo/
+│      ├─ __init__.py
+│      ├─ models.py
+│      ├─ forms.py
+│      ├─ views/
+│      │   └─ main_views.py
+│      ├─ static/
+│      │   └─ style.css
+│      └─ templates/
+│            └─ index.html
+└── config.py
+
