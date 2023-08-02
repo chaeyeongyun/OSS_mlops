@@ -3,7 +3,7 @@ name: Python application
 on:
   push:
     branches: 
-      - '!main'
+      - '!main' # excludes main
   pull_request:
     branches: 
       - '!main'
