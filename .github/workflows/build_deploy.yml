@@ -8,8 +8,6 @@ on:
 
 jobs:
     build:
-        using: 'docker'
-        image: 'Dockerfile'
         steps:
         # checkout the repo
         - name: 'Checkout GitHub Action'
@@ -26,14 +24,14 @@ jobs:
             login-server: ${{ secrets.REGISTRY_LOGIN_SERVER }}
             username: ${{ secrets.REGISTRY_USERNAME }}
             password: ${{ secrets.REGISTRY_PASSWORD }}
-        - run: |
+        - runs: 
+            using: 'docker'
+            image: 'Dockerfile'
             docker build . -t ${{ secrets.REGISTRY_LOGIN_SERVER }}/flaskapp:${{ github.sha }}
             docker push ${{ secrets.REGISTRY_LOGIN_SERVER }}/flaskapp:${{ github.sha }}
 
     deploy:
         needs: build
-        using: 'docker'
-        image: 'Dockerfile'
         steps:
         - name: 'Login via Azure CLI'
           uses: azure/login@v1
