@@ -10,5 +10,6 @@ RUN pip3 install flask
 RUN pip3 install pillow 
 
 EXPOSE 5000
+EXPOSE 80
 
 ENTRYPOINT python app.py
