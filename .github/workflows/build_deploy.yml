@@ -3,8 +3,14 @@ name: flask app deployment to ACI
 on:
     workflow_dispatch:
       branches: [ "main" ]
-    
-
+      jobs: ["deploy"]
+    push:
+      branches: [ "main" ]
+      jobs : ["build"]
+    pull_request:
+      branches: [ "main" ]
+      jobs : ["build"]
+      
 
 jobs:
     build:
