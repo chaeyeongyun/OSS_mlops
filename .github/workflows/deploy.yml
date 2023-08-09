@@ -1,11 +1,7 @@
 name: flask app deployment to ACI
 
 on:
-    workflow_run:
-      workflows:
-        - "build and push docker image"
-      types:
-        - requested
+  workflow_dispatch:
 
 jobs:
     deploy:
