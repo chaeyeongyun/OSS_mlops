@@ -1,4 +1,4 @@
-name: flask app deployment to ACI
+name: build and push docker image
 
 on:
     push:
