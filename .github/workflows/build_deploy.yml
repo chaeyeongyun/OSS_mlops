@@ -33,6 +33,10 @@ jobs:
         runs-on: ubuntu-latest
         needs: build
         steps:
+        - name: check user permission
+          uses: 74th/workflow-permission-action@1.0.0
+          with:
+            users: chaeyeongyun, soohyunme
         - name: 'Login via Azure CLI'
           uses: azure/login@v1
           with:
