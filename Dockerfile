@@ -1,6 +1,5 @@
 FROM ubuntu:20.04
 
-WORKDIR /Users/yunchaeyeong/Desktop/mlops/OSS_mlops
 COPY  . .
 
 LABEL "MAINTAINER"="changjoy <ui88g216@gmail.com>"
