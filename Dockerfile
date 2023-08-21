@@ -14,4 +14,4 @@ EXPOSE 5000
 EXPOSE 80
 
 
-ENTRYPOINT python3 app.py
+ENTRYPOINT python3 ./core_codes/app.py
